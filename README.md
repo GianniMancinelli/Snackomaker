@@ -29,6 +29,7 @@ aufzuzeigen wie man sich ernährt (Gesund oder nicht) und wie viele Ausgaben man
 # Betrieb
 **Welche zusätzliche Pakete müssen bei Bedarf installiert werden. (Muss im Normalfall nicht beachtet werden. Python muss nicht erwähnt werden, da das bei einem Python Projekt impliziert ist.)**
 - Flask, Plotly und Pandas
+
 **Was muss man bei der Ausführung beachten. Was muss eventuell davor noch gemacht werden.**
 **Welch Datei muss ausgeführt werden**
 
