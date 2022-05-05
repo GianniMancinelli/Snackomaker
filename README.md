@@ -13,7 +13,7 @@ Die erfassten Gerichte / Snacks sollen dann in einer Übersicht bzw. Biblothek z
 den User ersichtlich sein.
 
 
-#Problembeschreibung/Motivation
+# Problembeschreibung/Motivation
 **Warum dieses Projekt**
 - Dieses Projekt wurde gewählt, da Ernährung eine immer wichtige Rolle spielt und man oft vergisst, wie ungesund 
 man sich ernährt. Dieses Projekt soll einem die Möglichkeit bieten, die eigene Ernährung nach belieben zu erfassen und einem
@@ -26,13 +26,13 @@ aufzuzeigen wie man sich ernährt (Gesund oder nicht) und wie viele Ausgaben man
 - Aufzeigen wie gesund man sich ernährt und die Kosten für Lebensmittel darstellen.
  Daraufhin kann Rückgeschlossen werden, ob gesundes Essen = teuer bedeutet und ungesundes Essen = billig bedeutet
 
-#Betrieb
+# Betrieb
 **Welche zusätzliche Pakete müssen bei Bedarf installiert werden. (Muss im Normalfall nicht beachtet werden. Python muss nicht erwähnt werden, da das bei einem Python Projekt impliziert ist.)**
 - Flask, Plotly und Pandas
 **Was muss man bei der Ausführung beachten. Was muss eventuell davor noch gemacht werden.**
 **Welch Datei muss ausgeführt werden**
 
-#Benutzung
+# Benutzung
 **Wie wird das Projekt benutzt**
 1. Menus, sprich ernährung wird erfasst. 
 2. Dies wiederholt sich bis -
@@ -41,9 +41,9 @@ aufzuzeigen wie man sich ernährt (Gesund oder nicht) und wie viele Ausgaben man
 
 **Welche Optionen oder auch Spezialitäten existieren**
 
-#Architektur
+# Architektur
 **Hier bei Bedarf eine kurze Beschreibung des Ablaufs des Programms auf Code Ebene z.B. als Ablaufdiagramm.**
 
-#Ungelöste/unbearbeitete Probleme
+# Ungelöste/unbearbeitete Probleme
 **Was wurde nicht gelöst**
 **Welche Verbesserungen könnten noch gemacht werden.**
