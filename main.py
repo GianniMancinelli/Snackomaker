@@ -25,9 +25,16 @@ def statistic():
     return render_template("statistik.html", link=about_link)
 
 
+@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
+def formularmenu():
+    if request.method == "POST":
+        mahlzeit = request.form['snack']
+        kalorien = request.form['klr']
+        kosten = request.form['preis']
 
+        return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten)
 
-
+    return render_template("menu.html")
 
 
 

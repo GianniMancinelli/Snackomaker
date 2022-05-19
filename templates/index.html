@@ -57,19 +57,22 @@
  <!-- <a href="{{ link }}">Test</a>
 <button id="button"> Klick mich!</button> -->
 
+<!-- Abstand -->
+<p></p><p></p><p></p><p></p><p></p><p></p>
+
 <!-- Formular -->
 
-    <form method="get">
-        <label for="snack">Menu/Snack</label>
+    <form action="/menu" method="POST">
+        <label for="snack">Menu/Snack:</label>
         <input type="text" id="snack" name="snack"/>
         <br/><br/>
-        <label for="klr">Kalorien</label>
+        <label for="klr">Kalorien:</label>
         <input type="text" id="klr" name="klr"/>
         <br/><br/>
-        <label for="preis">Preis</label>
-        <input type="text" id="preis" name="mail"/>
+        <label for="preis">Preis CHF:</label>
+        <input type="text" id="preis" name="preis"/>
         <br/><br/>
-        <input type="submit" value="Absenden"/>
+        <button type="submit">Senden</button>
     </form>
 
 </body>
