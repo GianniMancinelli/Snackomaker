@@ -7,6 +7,99 @@ import random
 
 app = Flask(__name__)
 
+@app.route("/")
+def hello():
+    names = ["Sydney", "Silvan", "Furkan", "Gianluca", "Domingo"]
+    name_choice = random.choice(names)
+    about_link = url_for("about")
+    return render_template("index.html", name=name_choice, link=about_link)
+
+@app.route("/menu")
+def menu():
+    about_link = url_for("menu")
+    return render_template("menu.html", link=about_link)
+
+@app.route("/statistic")
+def statistic():
+    about_link = url_for("statistic")
+    return render_template("statistik.html", link=about_link)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@app.route("/about")
+def about():
+    return "Bitte gib "
+
+@app.route('/hello/<name2>')
+def begruessung(name2):
+    return "Hallo " + name2 + "!"
+
+@app.route('/formular', methods=["get", "post"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
+def formular():
+    if request.method.lower() == "get":
+        return render_template('formular.html')
+    if request.method.lower() == "post":
+        name = request.form['vorname']
+        return(name)
+
+@app.route("/list")
+def auflistung():
+    elemente = ["Money boy", "yolo", "swag", "dreh den swag auf"]
+    return render_template("liste.html", html_elemente=elemente)
+
+@app.route("/table")
+def tabelle():
+
+    biere = [
+        {
+            "name": "Panix Perle",
+            "herkunft": "Glarus",
+            "vol": "4.6",
+            "brauerei": "Adler",
+            "preis": 2.40
+        },
+        {
+            "name": "Retro",
+            "herkunft": "Luzern",
+            "vol": "4.9",
+            "brauerei": "Eichhof",
+            "preis" : 1.80
+        },
+        {
+            "name": "Quöllfrisch",
+            "herkunft": "Appenzell",
+            "vol": "4.8",
+            "brauerei": "Locher",
+            "preis" : 2.50
+        }
+    ]
+    for bier in biere:
+        preis = bier["preis"]
+        tax = berechnen(preis)
+        bier["steuern"] = tax
+
+
+    table_header = ["Name", "Herkunft", "Vol%", "Brauerei", "Preis", "Steuern"]
+    return render_template("beer.html", beers=biere, header=table_header)
+
+
+@app.route("/abgaben")
+def yo(preis):
+    abgaben_betrag = abgaben(preis)
+    return render_template("preis.html", abgabe=abgaben_betrag)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
