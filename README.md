@@ -1,4 +1,4 @@
-
+menu.jsono sowie funcitons vlt löschen.!!
 
 
 # Snack'o Maker 
@@ -9,7 +9,7 @@ Snack'o Maker; das System fragt einen was man gegessen hat. Dies kann man via Fo
 Diese Frage wird einem gestellt, sobald man online auf der Seite ist. 
 Nach belieben kann eine Statistik gezogen werden, welche anzeigt (beliebiger Zeitraum) wie gesund man sich ernährt hat
 und wieviele Ausgaben man in diesem Zeitraum hatte.
-Die erfassten Gerichte / Snacks sollen dann in einer Übersicht bzw. Biblothek zusammengefasst werden und für
+Die erfasste Ernährung soll dann in einer Übersicht bzw. Biblothek zusammengefasst werden und für
 den User ersichtlich sein.
 
 
