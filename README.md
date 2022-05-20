@@ -1,4 +1,4 @@
-menu.jsono sowie funcitons vlt löschen.!!
+
 
 
 # Snack'o Maker 
