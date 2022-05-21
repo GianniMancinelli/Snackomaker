@@ -2,17 +2,20 @@ from flask import Flask
 from flask import render_template
 from flask import url_for
 from flask import request
-import random
+from flask import json
+import json
+
+
+
 
 
 app = Flask(__name__)
 
+
 @app.route("/")
-def hello():
-    names = ["Sydney", "Silvan", "Furkan", "Gianluca", "Domingo"]
-    name_choice = random.choice(names)
-    about_link = url_for("about")
-    return render_template("index.html", name=name_choice, link=about_link)
+def index():
+    about_link = url_for("index")
+    return render_template("index.html", link=about_link)
 
 @app.route("/menu")
 def menu():
@@ -24,19 +27,42 @@ def statistic():
     about_link = url_for("statistic")
     return render_template("statistik.html", link=about_link)
 
+#kann mann löschen
+#@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
+#def formularmenu():
+    #if request.method == "POST":
+        #mahlzeit = request.form['snack']
+        #kalorien = request.form['klr']
+        #kosten = request.form['preis']
+        #datum = request.form['date']
 
-@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
-def formularmenu():
+
+        #return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten, date = datum)
+
+    #return render_template("menu.html")
+
+@app.route("/menu", methods=["GET", "POST"])
+def eingabe():
     if request.method == "POST":
-        mahlzeit = request.form['snack']
-        kalorien = request.form['klr']
-        kosten = request.form['preis']
+        data = request.form
+        menu = data["snack"]
+        kalorien = data["klr"]
+        kosten = data["preis"]
+        datum = data["date"]
+        try:
+            with open("ernährung_zusammengefasst.json", "r") as open_file:
+                datei_inhalt = json.load(open_file)
+        except FileNotFoundError:
+            datei_inhalt = []
 
-        return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten)
+        my_dict = {"Menu/Snack": menu, "Kalorien": kalorien, "Preis CHF": kosten, "Datum": datum}
+        datei_inhalt.append(my_dict)
 
-    return render_template("menu.html")
-
-
+        with open("ernährung_zusammengefasst.json", "w") as open_file:
+            json.dump(datei_inhalt, open_file, indent=4)
+        return str("Besten Dank, deine Daten wurden gespeichert")
+    else:
+        return render_template("menu.html")
 
 
 
