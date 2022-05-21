@@ -69,8 +69,6 @@ def eingabe():
 
 
 
-
-
 @app.route("/about")
 def about():
     return "Bitte gib "
