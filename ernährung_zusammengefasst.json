@@ -1,0 +1,62 @@
+[
+    {
+        "Menu/Snack": "Spaghetti Pesto",
+        "Kalorien": "430",
+        "Preis": "12",
+        "Datum": "19.05.2022"
+    },
+    {
+        "Menu/Snack": "Panini con Prosciutto e Mozzarella",
+        "Kalorien": "317",
+        "Preis CHF": "6",
+        "Datum": "19.05.2022"
+    },
+    {
+        "Menu/Snack": "Frey Branche (Br\u00fcggeli)",
+        "Kalorien": "146",
+        "Preis CHF": "1.20",
+        "Datum": "19.05.2022"
+    },
+    {
+        "Menu/Snack": "Bagel mit Frischk\u00e4se",
+        "Kalorien": "200",
+        "Preis CHF": "5",
+        "Datum": "20.05.2022"
+    },
+    {
+        "Menu/Snack": "Focaccia mit Poulet Curry",
+        "Kalorien": "350",
+        "Preis CHF": "8.50",
+        "Datum": "20.05.2022"
+    },
+    {
+        "Menu/Snack": "Panini mit Avocado",
+        "Kalorien": "150",
+        "Preis CHF": "5",
+        "Datum": "21.05.2022"
+    },
+    {
+        "Menu/Snack": "Brioche bun",
+        "Kalorien": "75",
+        "Preis CHF": "1.30",
+        "Datum": "21.05.2022"
+    },
+    {
+        "Menu/Snack": "Ribeye Steak mit Pommes",
+        "Kalorien": "650",
+        "Preis CHF": "20",
+        "Datum": "21.05.2022"
+    },
+    {
+        "Menu/Snack": "Solero Glace",
+        "Kalorien": "107",
+        "Preis CHF": "1.80",
+        "Datum": "21.05.2022"
+    },
+    {
+        "Menu/Snack": "Br\u00f6tchen mit Lachs",
+        "Kalorien": "300",
+        "Preis CHF": "6",
+        "Datum": "22.05.2022"
+    }
+]
