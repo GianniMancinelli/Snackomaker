@@ -6,42 +6,32 @@ from flask import json
 import json
 
 
+# wie kann ich die daten schöner anzeigen lassen? ohne klammern?
+# wie danach suchen?
+# wie berrechnung in Statistik?
+# wie Grafisch darstellen?
 
+#warum geht bild nicht?
 
 
 app = Flask(__name__)
 
 
+#verknüfung zu html Startseite aka index
 @app.route("/")
 def index():
     about_link = url_for("index")
     return render_template("index.html", link=about_link)
 
-@app.route("/menu")
-def menu():
-    about_link = url_for("menu")
-    return render_template("menu.html", link=about_link)
-
+#verknüfung zu html Seite Statistic
 @app.route("/statistic")
 def statistic():
     about_link = url_for("statistic")
     return render_template("statistik.html", link=about_link)
 
-#kann mann löschen
-#@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
-#def formularmenu():
-    #if request.method == "POST":
-        #mahlzeit = request.form['snack']
-        #kalorien = request.form['klr']
-        #kosten = request.form['preis']
-        #datum = request.form['date']
 
-
-        #return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten, date = datum)
-
-    #return render_template("menu.html")
-
-@app.route("/menu", methods=["GET", "POST"])
+#Verknüpfung mit Formular, sodass json file entsteht, und die eingaben abspeichert.
+@app.route("/form", methods=["GET", "POST"])
 def eingabe():
     if request.method == "POST":
         data = request.form
@@ -60,76 +50,32 @@ def eingabe():
 
         with open("ernährung_zusammengefasst.json", "w") as open_file:
             json.dump(datei_inhalt, open_file, indent=4)
-        return str("Besten Dank, deine Daten wurden gespeichert")
+        return str("Besten Dank für deine Eingabe, deine Daten wurden ordnungsgemäss gespeichert.")
     else:
-        return render_template("menu.html")
+        return render_template("index.html")
 
 
+#Ausgabe der Daten jsonfile wenn man auf "deine Ernährung" klickt & Verknüpfung zu html Seite deine Ernährung
+@app.route("/menu")
+def menu():
+    with open("ernährung_zusammengefasst.json", encoding="utf8") as open_file:
+        inhalt = open_file.read()
+    return inhalt.replace("\n", "<br>"), render_template("menu.html")
 
 
+#kann mann löschen
+#@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
+#def formularmenu():
+    #if request.method == "POST":
+        #mahlzeit = request.form['snack']
+        #kalorien = request.form['klr']
+        #kosten = request.form['preis']
+        #datum = request.form['date']
 
 
-@app.route("/about")
-def about():
-    return "Bitte gib "
+        #return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten, date = datum)
 
-@app.route('/hello/<name2>')
-def begruessung(name2):
-    return "Hallo " + name2 + "!"
-
-@app.route('/formular', methods=["get", "post"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
-def formular():
-    if request.method.lower() == "get":
-        return render_template('formular.html')
-    if request.method.lower() == "post":
-        name = request.form['vorname']
-        return(name)
-
-@app.route("/list")
-def auflistung():
-    elemente = ["Money boy", "yolo", "swag", "dreh den swag auf"]
-    return render_template("liste.html", html_elemente=elemente)
-
-@app.route("/table")
-def tabelle():
-
-    biere = [
-        {
-            "name": "Panix Perle",
-            "herkunft": "Glarus",
-            "vol": "4.6",
-            "brauerei": "Adler",
-            "preis": 2.40
-        },
-        {
-            "name": "Retro",
-            "herkunft": "Luzern",
-            "vol": "4.9",
-            "brauerei": "Eichhof",
-            "preis" : 1.80
-        },
-        {
-            "name": "Quöllfrisch",
-            "herkunft": "Appenzell",
-            "vol": "4.8",
-            "brauerei": "Locher",
-            "preis" : 2.50
-        }
-    ]
-    for bier in biere:
-        preis = bier["preis"]
-        tax = berechnen(preis)
-        bier["steuern"] = tax
-
-
-    table_header = ["Name", "Herkunft", "Vol%", "Brauerei", "Preis", "Steuern"]
-    return render_template("beer.html", beers=biere, header=table_header)
-
-
-@app.route("/abgaben")
-def yo(preis):
-    abgaben_betrag = abgaben(preis)
-    return render_template("preis.html", abgabe=abgaben_betrag)
+    #return render_template("menu.html")
 
 
 if __name__ == "__main__":
