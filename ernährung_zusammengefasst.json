@@ -58,5 +58,89 @@
         "Kalorien": "300",
         "Preis CHF": "6",
         "Datum": "22.05.2022"
+    },
+    {
+        "Menu/Snack": "Poulet im K\u00f6rbli",
+        "Kalorien": "600",
+        "Preis CHF": "18",
+        "Datum": "22.05.2022"
+    },
+    {
+        "Menu/Snack": "Sandwich Salami",
+        "Kalorien": "337",
+        "Preis CHF": "5.50",
+        "Datum": "23.05.2022"
+    },
+    {
+        "Menu/Snack": "Spaghetti Carbonara",
+        "Kalorien": "400",
+        "Preis CHF": "-",
+        "Datum": "23.05.2022"
+    },
+    {
+        "Menu/Snack": "Bircherm\u00fcesli",
+        "Kalorien": "369",
+        "Preis CHF": "3.40",
+        "Datum": "24.05.2022"
+    },
+    {
+        "Menu/Snack": "Kalte Platte",
+        "Kalorien": "ca. 500",
+        "Preis CHF": "-",
+        "Datum": "24.05.2022"
+    },
+    {
+        "Menu/Snack": "K\u00e4se Sandwich",
+        "Kalorien": "250",
+        "Preis CHF": "3.50",
+        "Datum": "25.05.2022"
+    },
+    {
+        "Menu/Snack": "cu",
+        "Kalorien": "82",
+        "Preis CHF": "15",
+        "Datum": "25.05.2022"
+    },
+    {
+        "Menu/Snack": "selfmade Pizza",
+        "Kalorien": "600",
+        "Preis CHF": "6",
+        "Datum": "26.05.2022"
+    },
+    {
+        "Menu/Snack": "BBQ",
+        "Kalorien": "ca. 500",
+        "Preis CHF": "12",
+        "Datum": "26.05.2022"
+    },
+    {
+        "Menu/Snack": "Entrecote Steak",
+        "Kalorien": "ca. 200",
+        "Preis CHF": "17",
+        "Datum": "27.05.2022"
+    },
+    {
+        "Menu/Snack": "Spaghetti arrabbiata",
+        "Kalorien": "170",
+        "Preis CHF": "-",
+        "Datum": "27.05.2022"
+    },
+    {
+        "Menu/Snack": "Snickers Glace",
+        "Kalorien": "179",
+        "Preis CHF": "-",
+        "Datum": "27.05.2022"
+    },
+    {
+        "Menu/Snack": "Solero Glace",
+        "Kalorien": "98",
+        "Preis CHF": "1.50",
+        "Datum": "27.05.2022"
+    },
+    {
+        "Menu/Snack": "Waffeln mit Lotus topping",
+        "Kalorien": "291",
+        "Preis CHF": "13",
+        "Datum": "28.05.2022"
     }
 ]
