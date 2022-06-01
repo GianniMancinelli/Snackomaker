@@ -20,6 +20,27 @@ font-weight: 700;
 
 label {
 font-weight: 700;
+}
+
+table,
+td,
+th {
+border: 1px solid green;
+margin: 0 auto;
+text-align: center;
+}
+
+table {
+background-color: #8db243;
+}
+
+h6 {
+text-align: center;
+font-weight: 700;
+}
 
 
+td {
+	text-align:center;
+	color: #ffffff;
 }
