@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!--  CSS -->
    <link rel="stylesheet" href="static/my_style.css">
@@ -18,30 +18,35 @@
 
         <!--  Navbar Bootstrap-->
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a2cd5a;">
-        <a class="navbar-brand" href="#">Snack'o Maker</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a2cd5a;">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Snack'o Maker</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu">deine Ernährung</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="statistic">Statistic</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu">deine Ernährung</a>
-            </li>
-             <li class="nav-item">
-              <a class="nav-link active" href="statistic">Statistic</a>
-            </li>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+</head>
+<body>
 
-     <!--  Hier sollen die Berechnungen ausgegeben werden-->
+   <!--   Bootstrap JavaScript bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!--  Hier sollen die Berechnungen ausgegeben werden-->
 
     </br>
 
@@ -55,19 +60,81 @@
 
     </br>
 
-    <p>Untenstehendes Bild gibt aufschluss über den gesunden Kalorienbedarf eines Menschen.</p> <p> Logischerweise ist der Kalorienbedarf, je nach Körperlichem Aufwand unterschiedlich,
-    deshalb gelten diese Werte nur zur Orientierung</p>
+    <p>Untenstehendes Tabelle gibt aufschluss über den gesunden Kalorienbedarf eines Menschen.</p> <p> Logischerweise ist der Kalorienbedarf, je nach körperlichem Aufwand unterschiedlich,
+    deshalb gelten diese Werte nur zur Orientierung.</p>
 
-    <img src="images/kalorien.jpg"/>
+        </br>
 
-<div class="bild">
-    <img src="./images/kcal.JPG">
-</div>
+    <!--  Erstellte Tabellen für Richtwerte an Kalorien-->
+    <h6>Männer:</h6>
+<table>
+  <tr>
+    <th>Alter</th>
+    <th>kcal per d.</th>
+    <th>kcal per w.</th>
+    <th>kcal per m.</th>
+  </tr>
+  <tr>
+    <td>19 - 25 Jahre</td>
+    <td>2400 - 3100</td>
+    <td>19250</td>
+    <td>82500</td>
+   </tr>
+   <tr>
+     <td>25 - 51 Jahre</td>
+     <td>2300 - 3000</td>
+     <td>18550</td>
+     <td>79500</td>
+   </tr>
+   <tr>
+     <td>51 - 61 Jahre</td>
+     <td>2200 - 2800</td>
+     <td>17500</td>
+     <td>75000</td>
+   </tr>
+   <tr>
+     <td>65+ Jahre</td>
+     <td>2100 - 2800</td>
+     <td>17150</td>
+     <td>73500</td>
+   </tr>
+</table>
 
+    </br>
 
-
-</head>
-<body>
+<h6>Frauen:</h6>
+<table>
+  <tr>
+    <th>Alter</th>
+    <th>kcal per d.</th>
+    <th>kcal per w.</th>
+    <th>kcal per m.</th>
+  </tr>
+  <tr>
+    <td>19 - 25 Jahre</td>
+    <td>1900 - 2500</td>
+    <td>15400</td>
+    <td>66000</td>
+   </tr>
+   <tr>
+     <td>25 - 51 Jahre</td>
+     <td>1800 - 2400</td>
+     <td>14700</td>
+     <td>63000</td>
+   </tr>
+   <tr>
+     <td>51 - 61 Jahre</td>
+     <td>1700 - 2200</td>
+     <td>13650</td>
+     <td>58500</td>
+   </tr>
+   <tr>
+     <td>65+ Jahre</td>
+     <td>1700 - 2100</td>
+     <td>13300</td>
+     <td>57000</td>
+   </tr>
+</table>
 
 </body>
 </html>
