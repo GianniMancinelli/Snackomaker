@@ -6,12 +6,12 @@ from flask import json
 import json
 
 
-# wie kann ich die daten schöner anzeigen lassen? ohne klammern?
-# wie danach suchen?
+
 # wie berrechnung in Statistik?
+
 # wie Grafisch darstellen?
 
-#warum geht bild nicht?
+
 
 
 app = Flask(__name__)
@@ -39,6 +39,7 @@ def eingabe():
         kalorien = data["klr"]
         kosten = data["preis"]
         datum = data["date"]
+
         try:
             with open("ernährung_zusammengefasst.json", "r") as open_file:
                 datei_inhalt = json.load(open_file)
@@ -54,29 +55,17 @@ def eingabe():
     else:
         return render_template("index.html")
 
-
 #Ausgabe der Daten jsonfile wenn man auf "deine Ernährung" klickt & Verknüpfung zu html Seite deine Ernährung
 @app.route("/menu")
 def menu():
-    with open("ernährung_zusammengefasst.json", encoding="utf8") as open_file:
-        inhalt = open_file.read()
-    return inhalt.replace("\n", "<br>"), render_template("menu.html")
+    with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
+        inhalt = json.load(open_file) #open_file.read()
+        return render_template("menu.html", inhalt=inhalt)
 
 
-#kann mann löschen
-#@app.route('/menu', methods=["GET", "POST"]) #formular erstellt bzw. verknüfung, mit get und post wird entgegengenommen und wiedergegeben
-#def formularmenu():
-    #if request.method == "POST":
-        #mahlzeit = request.form['snack']
-        #kalorien = request.form['klr']
-        #kosten = request.form['preis']
-        #datum = request.form['date']
-
-
-        #return render_template("menu.html", snack1 = mahlzeit, kcal = kalorien,  price = kosten, date = datum)
-
-    #return render_template("menu.html")
 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
+

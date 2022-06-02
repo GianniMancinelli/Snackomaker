@@ -1,152 +1,218 @@
 [
     {
-        "Menu/Snack": "Spaghetti Pesto",
-        "Kalorien": "430",
-        "Preis": "12",
+        "Menu/Snack": "Spaghetti Pesto,",
+        "Kalorien": "430,",
+        "Preis": "12,",
         "Datum": "19.05.2022"
     },
     {
-        "Menu/Snack": "Panini con Prosciutto e Mozzarella",
-        "Kalorien": "317",
-        "Preis CHF": "6",
+        "Menu/Snack": "Panini con Prosciutto e Mozzarella,",
+        "Kalorien": "317,",
+        "Preis CHF": "6,",
         "Datum": "19.05.2022"
     },
     {
-        "Menu/Snack": "Frey Branche (Br\u00fcggeli)",
-        "Kalorien": "146",
-        "Preis CHF": "1.20",
+        "Menu/Snack": "Frey Branche (Br\u00fcggeli),",
+        "Kalorien": "146,",
+        "Preis CHF": "1.20,",
         "Datum": "19.05.2022"
     },
     {
-        "Menu/Snack": "Bagel mit Frischk\u00e4se",
-        "Kalorien": "200",
-        "Preis CHF": "5",
+        "Menu/Snack": "Bagel mit Frischk\u00e4se,",
+        "Kalorien": "200,",
+        "Preis CHF": "5,",
         "Datum": "20.05.2022"
     },
     {
-        "Menu/Snack": "Focaccia mit Poulet Curry",
-        "Kalorien": "350",
-        "Preis CHF": "8.50",
+        "Menu/Snack": "Focaccia mit Poulet Curry,",
+        "Kalorien": "350,",
+        "Preis CHF": "8.50,",
         "Datum": "20.05.2022"
     },
     {
-        "Menu/Snack": "Panini mit Avocado",
-        "Kalorien": "150",
-        "Preis CHF": "5",
+        "Menu/Snack": "Panini mit Avocado,",
+        "Kalorien": "150,",
+        "Preis CHF": "5,",
         "Datum": "21.05.2022"
     },
     {
-        "Menu/Snack": "Brioche bun",
-        "Kalorien": "75",
-        "Preis CHF": "1.30",
+        "Menu/Snack": "Brioche bun,",
+        "Kalorien": "75,",
+        "Preis CHF": "1.30,",
         "Datum": "21.05.2022"
     },
     {
-        "Menu/Snack": "Ribeye Steak mit Pommes",
-        "Kalorien": "650",
-        "Preis CHF": "20",
+        "Menu/Snack": "Ribeye Steak mit Pommes,",
+        "Kalorien": "650,",
+        "Preis CHF": "20,",
         "Datum": "21.05.2022"
     },
     {
-        "Menu/Snack": "Solero Glace",
-        "Kalorien": "107",
-        "Preis CHF": "1.80",
+        "Menu/Snack": "Solero Glace,",
+        "Kalorien": "107,",
+        "Preis CHF": "1.80,",
         "Datum": "21.05.2022"
     },
     {
-        "Menu/Snack": "Br\u00f6tchen mit Lachs",
-        "Kalorien": "300",
-        "Preis CHF": "6",
+        "Menu/Snack": "Br\u00f6tchen mit Lachs,",
+        "Kalorien": "300,",
+        "Preis CHF": "6,",
         "Datum": "22.05.2022"
     },
     {
-        "Menu/Snack": "Poulet im K\u00f6rbli",
-        "Kalorien": "600",
-        "Preis CHF": "18",
+        "Menu/Snack": "Poulet im K\u00f6rbli,",
+        "Kalorien": "600,",
+        "Preis CHF": "18,",
         "Datum": "22.05.2022"
     },
     {
-        "Menu/Snack": "Sandwich Salami",
-        "Kalorien": "337",
-        "Preis CHF": "5.50",
+        "Menu/Snack": "Sandwich Salami,",
+        "Kalorien": "337,",
+        "Preis CHF": "5.50,",
         "Datum": "23.05.2022"
     },
     {
-        "Menu/Snack": "Spaghetti Carbonara",
-        "Kalorien": "400",
-        "Preis CHF": "-",
+        "Menu/Snack": "Spaghetti Carbonara,",
+        "Kalorien": "400,",
+        "Preis CHF": "-,",
         "Datum": "23.05.2022"
     },
     {
-        "Menu/Snack": "Bircherm\u00fcesli",
-        "Kalorien": "369",
-        "Preis CHF": "3.40",
+        "Menu/Snack": "Bircherm\u00fcesli,",
+        "Kalorien": "369,",
+        "Preis CHF": "3.40,",
         "Datum": "24.05.2022"
     },
     {
-        "Menu/Snack": "Kalte Platte",
-        "Kalorien": "ca. 500",
-        "Preis CHF": "-",
+        "Menu/Snack": "Kalte Platte,",
+        "Kalorien": "ca. 500,",
+        "Preis CHF": "-,",
         "Datum": "24.05.2022"
     },
     {
-        "Menu/Snack": "K\u00e4se Sandwich",
-        "Kalorien": "250",
-        "Preis CHF": "3.50",
+        "Menu/Snack": "K\u00e4se Sandwich,",
+        "Kalorien": "250,",
+        "Preis CHF": "3.50,",
         "Datum": "25.05.2022"
     },
     {
-        "Menu/Snack": "cu",
-        "Kalorien": "82",
-        "Preis CHF": "15",
+        "Menu/Snack": "cu,",
+        "Kalorien": "82,",
+        "Preis CHF": "15,",
         "Datum": "25.05.2022"
     },
     {
-        "Menu/Snack": "selfmade Pizza",
-        "Kalorien": "600",
-        "Preis CHF": "6",
+        "Menu/Snack": "selfmade Pizza,",
+        "Kalorien": "600,",
+        "Preis CHF": "6,",
         "Datum": "26.05.2022"
     },
     {
-        "Menu/Snack": "BBQ",
-        "Kalorien": "ca. 500",
-        "Preis CHF": "12",
+        "Menu/Snack": "BBQ,",
+        "Kalorien": "ca. 500,",
+        "Preis CHF": "12,",
         "Datum": "26.05.2022"
     },
     {
-        "Menu/Snack": "Entrecote Steak",
-        "Kalorien": "ca. 200",
-        "Preis CHF": "17",
+        "Menu/Snack": "Entrecote Steak,",
+        "Kalorien": "ca. 200,",
+        "Preis CHF": "17,",
         "Datum": "27.05.2022"
     },
     {
-        "Menu/Snack": "Spaghetti arrabbiata",
-        "Kalorien": "170",
-        "Preis CHF": "-",
+        "Menu/Snack": "Spaghetti arrabbiata,",
+        "Kalorien": "170,",
+        "Preis CHF": "-,",
         "Datum": "27.05.2022"
     },
     {
-        "Menu/Snack": "Snickers Glace",
-        "Kalorien": "179",
-        "Preis CHF": "-",
+        "Menu/Snack": "Snickers Glace,",
+        "Kalorien": "179,",
+        "Preis CHF": "-,",
         "Datum": "27.05.2022"
     },
     {
-        "Menu/Snack": "Solero Glace",
-        "Kalorien": "98",
-        "Preis CHF": "1.50",
+        "Menu/Snack": "Solero Glace,",
+        "Kalorien": "98,",
+        "Preis CHF": "1.50,",
         "Datum": "27.05.2022"
     },
     {
-        "Menu/Snack": "Waffeln mit Lotus topping",
-        "Kalorien": "291",
-        "Preis CHF": "13",
+        "Menu/Snack": "Waffeln mit Lotus topping,",
+        "Kalorien": "291,",
+        "Preis CHF": "13,",
         "Datum": "28.05.2022"
     },
     {
-        "Menu/Snack": "Bratwurst grilliert",
-        "Kalorien": "350",
-        "Preis CHF": "5",
+        "Menu/Snack": "Bratwurst grilliert,",
+        "Kalorien": "350,",
+        "Preis CHF": "5,",
         "Datum": "28.05.2022"
+    },
+    {
+        "Menu/Snack": "Pangasius Filets,",
+        "Kalorien": "220,",
+        "Preis CHF": "9.90,",
+        "Datum": "28.05.2022"
+    },
+    {
+        "Menu/Snack": "Kottu Roti,",
+        "Kalorien": "331,",
+        "Preis CHF": "-,",
+        "Datum": "2022-05-30"
+    },
+    {
+        "Menu/Snack": "D\u00fcr\u00fcm,",
+        "Kalorien": "600,",
+        "Preis CHF": "10,",
+        "Datum": "31.05.2022"
+    },
+    {
+        "Menu/Snack": "Belegt Brot aus Beck,",
+        "Kalorien": "150,",
+        "Preis CHF": "4.50,",
+        "Datum": "2022-05-31"
+    },
+    {
+        "Menu/Snack": "Thai Curry,",
+        "Kalorien": "450,",
+        "Preis CHF": "15,",
+        "Datum": "01.06.2022"
+    },
+    {
+        "Menu/Snack": "Wienerli mit Brot,",
+        "Kalorien": "200,",
+        "Preis CHF": "-,",
+        "Datum": "01.06.2022"
+    },
+    {
+        "Menu/Snack": "Snickers,",
+        "Kalorien": "241,",
+        "Preis CHF": "2,",
+        "Datum": "01.06.2022"
+    },
+    {
+        "Menu/Snack": "K\u00e4se,",
+        "Kalorien": "100,",
+        "Preis CHF": "-,",
+        "Datum": "02.06.2022"
+    },
+    {
+        "Menu/Snack": "Muesli,",
+        "Kalorien": "80,",
+        "Preis CHF": "3.60,",
+        "Datum": "02.06.2022"
+    },
+    {
+        "Menu/Snack": "K\u00e4seschnitte,",
+        "Kalorien": "200,",
+        "Preis CHF": "2,",
+        "Datum": "02.06.2022"
+    },
+    {
+        "Menu/Snack": "Heidelbeeren,",
+        "Kalorien": "42,",
+        "Preis CHF": "2,",
+        "Datum": "02.06.2022"
     }
 ]
