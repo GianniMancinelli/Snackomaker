@@ -36,24 +36,29 @@
           <a class="nav-link" href="statistic">Statistic</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search for eaten Menu" aria-label="Search">
-        <button class="btn btn-warning" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
 
+
+
+
+
 </head>
 <body>
+
+<!-- wiedergibt die json datei in menu.html bzw. key and values -->
+
+ {% for el in inhalt %}
+ <li>   {% for key, value in el.items(): %}</li>
+        {{ key }} : {{ value }}
+     {% endfor %}
+{% endfor %}
+
+
    <!--   Bootstrap JavaScript bundle-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-
-    <p>{{ snack1 }}</p>
-    {{ kcal }}
-    {{ price }}
-    {{ date }}
 
 </body>
 </html>
