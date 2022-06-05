@@ -50,7 +50,7 @@
 <!-- wiedergibt die json datei in menu.html bzw. key and values -->
 
  {% for el in inhalt %}
- <li>   {% for key, value in el.items(): %}</li>
+ <li>{% for key, value in el.items(): %} </br></li>
         {{ key }} : {{ value }}
      {% endfor %}
 {% endfor %}
