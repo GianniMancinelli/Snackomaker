@@ -44,3 +44,11 @@ td {
 	text-align:center;
 	color: #ffffff;
 }
+
+li {
+text-align: center;
+list-style: none;
+}
+
+#groesse {
+text-align: center;}
