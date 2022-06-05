@@ -67,19 +67,24 @@
 
     <form action="/form" method="POST">
         <label for="snack">Menu/Snack:</label>
-        <input type="text" id="snack" name="snack"/>
+        <input type="text" id="snack" name="snack" size="78" />
         <br/><br/>
         <label for="klr">Kalorien:</label>
-        <input type="text" id="klr" name="klr"/>
+        <input type="text" id="klr" name="klr" size="78"/>
         <br/><br/>
         <label for="preis">Preis CHF:</label>
-        <input type="text" id="preis" name="preis"/>
+      <!--  <div class="input-group mb-3">-->
+        <input type="text" id="preis" name="preis" size="78"/>
+       <!-- <span class="input-group-text">CHF</span>-->
+           <!-- </div>-->
         <br/><br/>
         <label for="date">Datum:</label>
-        <input type="text" id="date" name="date"/>
+        <input type="text" id="date" name="date" size="78"/>
         <br/><br/>
-        <button type="submit">Senden</button>
+        <button type="submit" class="btn btn-warning btn-lg">Senden</button>
     </form>
+
+
 
 </body>
 </html>
