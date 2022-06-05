@@ -26,8 +26,22 @@ def index():
 #verknüfung zu html Seite Statistic
 @app.route("/statistic")
 def statistic():
+    with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
+        inhalt = json.load(open_file)
+        #damit menues gezählt werden
+        count = len(inhalt)
     about_link = url_for("statistic")
-    return render_template("statistik.html", link=about_link)
+    # damit alle Preise CHF summiert werden
+    summe = 0
+    for el in inhalt:
+        summe += int(float(el["Preis CHF"]))
+    # damit alle Kalorien summiert werden
+    summe1 = 0
+    for el in inhalt:
+        summe1 += int(float(el["Kalorien"]))
+    return render_template("statistik.html", link=about_link, count=count,ausgaben=summe, kalorien=summe1 )
+
+
 
 
 #Verknüpfung mit Formular, sodass json file entsteht, und die eingaben abspeichert.
@@ -59,7 +73,7 @@ def eingabe():
 @app.route("/menu")
 def menu():
     with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
-        inhalt = json.load(open_file) #open_file.read()
+        inhalt = json.load(open_file)
         return render_template("menu.html", inhalt=inhalt)
 
 
