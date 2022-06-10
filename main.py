@@ -1,21 +1,21 @@
-from flask import Flask
+from flask import Flask, flash
 from flask import render_template
 from flask import url_for
 from flask import request
 from flask import json
+import plotly.express as px
 import json
 
-
-
-# wie berrechnung in Statistik?
-
-# wie Grafisch darstellen?
 
 
 
 
 app = Flask(__name__)
-
+# Quelle Flash Messages:
+# https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/
+# Quelle für Secret Key:
+# https://stackoverflow.com/questions/30223379/trying-to-flash-a-message-raises-an-exception
+app.config["SECRET_KEY"] = "2A69DB69695KWL8XP1LZ69KJF0"
 
 #verknüfung zu html Startseite aka index
 @app.route("/")
@@ -43,7 +43,6 @@ def statistic():
 
 
 
-
 #Verknüpfung mit Formular, sodass json file entsteht, und die eingaben abspeichert.
 @app.route("/form", methods=["GET", "POST"])
 def eingabe():
@@ -65,7 +64,8 @@ def eingabe():
 
         with open("ernährung_zusammengefasst.json", "w") as open_file:
             json.dump(datei_inhalt, open_file, indent=4)
-        return str("Besten Dank für deine Eingabe, deine Daten wurden ordnungsgemäss gespeichert.")
+            flash("Besten Dank für deine Eingabe, deine Daten wurden ordnungsgemäss gespeichert.", "success")
+            return render_template("index.html")
     else:
         return render_template("index.html")
 
@@ -75,6 +75,28 @@ def menu():
     with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
         inhalt = json.load(open_file)
         return render_template("menu.html", inhalt=inhalt)
+
+#Plotly grafic, berechnung von /statistc nochmals verwendet um die aktuellen Zahlen auch auf dem Chart ersichtlich zu haben.
+
+@app.route("/grafik")
+def grafik():
+    with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
+        inhalt = json.load(open_file)
+        count = len(inhalt)
+    summe = 0
+    for el in inhalt:
+        summe += int(float(el["Preis CHF"]))
+    summe1 = 0
+    for el in inhalt:
+        summe1 += int(float(el["Kalorien"]))
+
+    data = dict(
+        number=[summe1, summe, count],
+        zusammenfassung=["eingenommene Kalorien", "Ausgaben", "verspeiste Menus/Snacks"])
+
+    fig = px.funnel(data, x='number', y='zusammenfassung')
+    fig.show()
+    return render_template("index.html")
 
 
 
