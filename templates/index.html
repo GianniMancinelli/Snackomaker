@@ -32,8 +32,14 @@
         <li class="nav-item">
           <a class="nav-link" href="menu">deine Ernährung</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="statistic">Statistic</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Statistic
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -55,8 +61,20 @@
 
 <h5 align="center">Bitte gib untenstehend dein Snack/Menu inkl. Kalorien sowie den Preis ein.</h5>
 
- <!-- <a href="{{ link }}">Test</a>
-<button id="button"> Klick mich!</button> -->
+   <div class="container">
+  <p>
+ <!--Der folgende Jinja Code prüft, ob eine Flash-Message von einer Route gesendet wird. Ist dies der Fall, wird die Flash-Message angezeigt. -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </p>
+</div>
 
 <!-- Abstand -->
 </br></br>
@@ -67,19 +85,19 @@
 
     <form action="/form" method="POST">
         <label for="snack">Menu/Snack:</label>
-        <input type="text" id="snack" name="snack" size="78" />
+        <input type="text" id="snack" name="snack" size="30"/>
         <br/><br/>
         <label for="klr">Kalorien:</label>
-        <input type="text" id="klr" name="klr" size="78"/>
+        <!-- type number verwendet, damit sichergestellt wird, dass keien Buchstaben eingegeben werden -->
+        <input type="number" id="klr" name="klr"/>
         <br/><br/>
         <label for="preis">Preis CHF:</label>
-      <!--  <div class="input-group mb-3">-->
-        <input type="text" id="preis" name="preis" size="78"/>
-       <!-- <span class="input-group-text">CHF</span>-->
-           <!-- </div>-->
+        <!-- type number verwendet, damit sichergestellt wird, dass keien Buchstaben eingegeben werden -->
+        <input type="number" id="preis" name="preis" step=".01"/>
         <br/><br/>
         <label for="date">Datum:</label>
-        <input type="text" id="date" name="date" size="78"/>
+        <!--type date verwendet damit Datum nicht jedesmal manuel eingetragen werden muss-->
+        <input type="date" id="date" name="date"/>
         <br/><br/>
         <button type="submit" class="btn btn-warning btn-lg">Senden</button>
     </form>
