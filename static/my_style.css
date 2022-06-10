@@ -1,4 +1,4 @@
-form {
+#Formular {
 text-align:center;
 margin: 0;
 
@@ -48,7 +48,17 @@ td {
 li {
 text-align: center;
 list-style: none;
+font-weight: 700;
+}
+
+form{
+text-align: center
 }
 
 #groesse {
 text-align: center;}
+
+#Suchen {
+text-align: center;
+width:275px;
+}
