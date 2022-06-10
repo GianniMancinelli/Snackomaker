@@ -31,9 +31,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="menu">deine Ernährung</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="statistic">Statistic</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Statistic
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -47,13 +52,24 @@
 </head>
 <body>
 
+
+<h5 align="center">Deine erfassten Menus und Snacks:</h5>
+
+
+<!-- Abstand -->
+</br>
+
+
 <!-- wiedergibt die json datei in menu.html bzw. key and values -->
 
  {% for el in inhalt %}
- <li>{% for key, value in el.items(): %} </br></li>
-        {{ key }} : {{ value }}
+ <!--<li> </br></li>-->
+  {% for key, value in el.items(): %}
+      <li class="list-group-item">{{ key }} : {{ value }}</li>
      {% endfor %}
+</br>
 {% endfor %}
+
 
 
    <!--   Bootstrap JavaScript bundle-->

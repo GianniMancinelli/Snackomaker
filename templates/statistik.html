@@ -31,9 +31,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="menu">deine Ernährung</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" href="statistic">Statistic</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Statistic
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -52,9 +57,9 @@
 
     <div class="stats">
     <ul>
-        <li>Eingenommene Mahlzeiten: <p>Total {{ count }}</p> </li> <!--damit anzahl Menus angezeigt wird--></br>
-        <li>Eingenommene Kalorien: <p> Total {{ kalorien }} Kalorien</p></li><!--damit Summe der Kalorien angezeigt wird--></br>
-        <li>Total Ausgaben: <p> Total {{ ausgaben }} CHF Ausgaben</p></li><!--damit Summe der Ausgaben angezeigt wird--></br>
+        <li>Total erfasste Mahlzeiten: <p> {{ count }} Menus oder Snacks</p> </li> <!--damit anzahl Menus angezeigt wird--></br>
+        <li>Total eingenommene Kalorien: <p>  {{ kalorien }} Kalorien</p></li><!--damit Summe der Kalorien angezeigt wird--></br>
+        <li>Total Ausgaben: <p>  {{ ausgaben }} CHF </p></li><!--damit Summe der Ausgaben angezeigt wird--></br>
 
     </ul>
     </div>
