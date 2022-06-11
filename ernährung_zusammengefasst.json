@@ -1,69 +1,9 @@
 [
     {
-        "Menu/Snack": "Panini con Prosciutto e Mozzarella",
-        "Kalorien": "317",
-        "Preis CHF": "6",
-        "Datum": "19.05.2022"
-    },
-    {
-        "Menu/Snack": "Frey Branche (Br\u00fcggeli)",
-        "Kalorien": "146",
-        "Preis CHF": "1.20",
-        "Datum": "19.05.2022"
-    },
-    {
-        "Menu/Snack": "Bagel mit Frischk\u00e4se",
-        "Kalorien": "200",
-        "Preis CHF": "5",
-        "Datum": "20.05.2022"
-    },
-    {
         "Menu/Snack": "Focaccia mit Poulet Curry",
         "Kalorien": "350",
         "Preis CHF": "8.50",
         "Datum": "20.05.2022"
-    },
-    {
-        "Menu/Snack": "Panini mit Avocado",
-        "Kalorien": "150",
-        "Preis CHF": "5",
-        "Datum": "21.05.2022"
-    },
-    {
-        "Menu/Snack": "Brioche bun",
-        "Kalorien": "75",
-        "Preis CHF": "1.30",
-        "Datum": "21.05.2022"
-    },
-    {
-        "Menu/Snack": "Ribeye Steak mit Pommes",
-        "Kalorien": "650",
-        "Preis CHF": "20",
-        "Datum": "21.05.2022"
-    },
-    {
-        "Menu/Snack": "Br\u00f6tchen mit Lachs",
-        "Kalorien": "300",
-        "Preis CHF": "6",
-        "Datum": "22.05.2022"
-    },
-    {
-        "Menu/Snack": "Sandwich Salami",
-        "Kalorien": "337",
-        "Preis CHF": "5.50",
-        "Datum": "23.05.2022"
-    },
-    {
-        "Menu/Snack": "Bratwurst grilliert",
-        "Kalorien": "350",
-        "Preis CHF": "5",
-        "Datum": "28.05.2022"
-    },
-    {
-        "Menu/Snack": "Pangasius Filets",
-        "Kalorien": "220",
-        "Preis CHF": "9.90",
-        "Datum": "28.05.2022"
     },
     {
         "Menu/Snack": "Kottu Roti",
@@ -83,42 +23,7 @@
         "Preis CHF": "2",
         "Datum": "01.06.2022"
     },
-    {
-        "Menu/Snack": "K\u00e4se",
-        "Kalorien": "100",
-        "Preis CHF": "4",
-        "Datum": "02.06.2022"
-    },
-    {
-        "Menu/Snack": "Muesli",
-        "Kalorien": "80",
-        "Preis CHF": "3.60",
-        "Datum": "02.06.2022"
-    },
-    {
-        "Menu/Snack": "K\u00e4seschnitte",
-        "Kalorien": "200",
-        "Preis CHF": "2",
-        "Datum": "02.06.2022"
-    },
-    {
-        "Menu/Snack": "Heidelbeeren",
-        "Kalorien": "42",
-        "Preis CHF": "2",
-        "Datum": "02.06.2022"
-    },
-    {
-        "Menu/Snack": "Trauben",
-        "Kalorien": "40",
-        "Preis CHF": "3.50",
-        "Datum": "03.06.2022"
-    },
-    {
-        "Menu/Snack": "Br\u00fcgeli",
-        "Kalorien": "150",
-        "Preis CHF": "2",
-        "Datum": "03.06.2022"
-    },
+
     {
         "Menu/Snack": "Big Mac",
         "Kalorien": "510",
