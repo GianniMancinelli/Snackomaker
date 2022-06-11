@@ -20,24 +20,24 @@
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a2cd5a;">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">Snack'o Maker</a>
+      <a class="navbar-brand" href="/">Snack'o Maker</a> <!-- verknüpfung zur Startseite-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/">Home</a> <!-- verknüpfung zur Startseite-->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="menu">deine Ernährung</a>
+          <a class="nav-link" href="menu">deine Ernährung</a> <!-- verknüpfung zur Bibliothek "deine Ernährung"-->
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Statistic
-          </a>
+          </a> <!-- verknüpfung zur Statistik-->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
-              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li> <!-- Dropdowns-->
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li> <!-- Dropdowns-->
           </ul>
         </li>
       </ul>
@@ -51,10 +51,25 @@
    <!--   Bootstrap JavaScript bundle-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <!--  Hier sollen die Berechnungen ausgegeben werden-->
+
 
     </br>
+  <div class="container">
+  <p>
+ <!--Der folgende Jinja Code prüft, ob eine Flash-Message von einer Route gesendet wird. Ist dies der Fall, wird die Flash-Message angezeigt. -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </p>
+</div>
 
+   <!--  Hier sollen die Berechnungen ausgegeben werden - mittels jinja code-->
     <div class="stats">
     <ul>
         <li>Total erfasste Mahlzeiten: <p> {{ count }} Menus oder Snacks</p> </li> <!--damit anzahl Menus angezeigt wird--></br>

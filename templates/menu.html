@@ -20,24 +20,24 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a2cd5a;">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">Snack'o Maker</a>
+      <a class="navbar-brand" href="/">Snack'o Maker</a> <!-- verknüpfung zur Startseite-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/">Home</a> <!-- verknüpfung zur Startseite-->
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="menu">deine Ernährung</a>
+          <a class="nav-link active" href="menu">deine Ernährung</a> <!-- verknüpfung zur Bibliothek "deine Ernährung"-->
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Statistic
-          </a>
+          </a>  <!-- verknüpfung zur Statistik-->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
-              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li> <!-- Dropdowns-->
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li> <!-- Dropdowns-->
           </ul>
         </li>
       </ul>
@@ -65,9 +65,9 @@
  {% for el in inhalt %}
  <!--<li> </br></li>-->
   {% for key, value in el.items(): %}
-      <li class="list-group-item">{{ key }} : {{ value }}</li>
+      <li class="list-group-item">{{ key }} : {{ value }}</li> <!-- in liste ausgegeben -->
      {% endfor %}
-</br>
+</br> <!-- absatz gemacht -->
 {% endfor %}
 
 

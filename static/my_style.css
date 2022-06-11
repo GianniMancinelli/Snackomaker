@@ -1,9 +1,11 @@
+/*  zentriert in mitte*/
 #Formular {
 text-align:center;
 margin: 0;
 
 }
 
+/*  zentriert in mitte sowie font-weight bzw. Schrift dick gemacht*/
 p {
 text-align:center;
 margin: 0;
@@ -12,16 +14,19 @@ font-weight: 700;
 
 }
 
+/*  Schrift dick gemacht*/
 ul {
 font-weight: 700;
 
 
 }
 
+/*  Schrift dick gemacht*/
 label {
 font-weight: 700;
 }
 
+/*  Zentriert sowie farbe angepasst*/
 table,
 td,
 th {
@@ -30,35 +35,35 @@ margin: 0 auto;
 text-align: center;
 }
 
+/*  Farbe angepasst*/
 table {
 background-color: #8db243;
 }
 
+/*  zentriert und Schrift dick gemacht*/
 h6 {
 text-align: center;
 font-weight: 700;
 }
 
-
+/*  zentriert sowie farbe angepasst*/
 td {
 	text-align:center;
 	color: #ffffff;
 }
 
+/*  zentriert und dick gemacht*/
 li {
 text-align: center;
 list-style: none;
 font-weight: 700;
 }
 
+/*  zentriert */
 form{
 text-align: center
 }
 
-#groesse {
-text-align: center;}
 
-#Suchen {
-text-align: center;
-width:275px;
-}
+
+
