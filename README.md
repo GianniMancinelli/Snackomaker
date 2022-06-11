@@ -41,6 +41,8 @@ CHF 500.00 soll das System einen darauf aufmerksam machen, dass man die Ausgaben
 
 # Betrieb
 **Betrieb**
+
+
 Snack'o maker ist so aufgebaut, dass man auf der Startseite "Home" direkt die Inputseite hat, bei der
 man sein Snack / Menu erfassen kann. Um eingenommene Mahlzeit (Snack / Menu) zu erfassen, füllt man alle Felder "Menu/Snack",
 "Kalorien", "Preis CHF" sowie das "Datum" aus.
@@ -90,7 +92,7 @@ Ebenfalls besteht die Möglichkeit unter Statistik - Grafik, die Funnelgrafik, d
 
 # Architektur/Flowdiagram
 **Hier bei Bedarf eine kurze Beschreibung des Ablaufs des Programms auf Code Ebene z.B. als Ablaufdiagramm.**
-![img.png](img.png)
+![](Flowchart_snackomaker.png)
 
 
 # Ungelöste/unbearbeitete Probleme
