@@ -12,33 +12,31 @@
     <!--  CSS -->
    <link rel="stylesheet" href="static/my_style.css">
 
-
+    <!--  Titel -->
     <title>Snack'o Maker</title>
 
 
     <!--  Navbar Bootstrap-->
-
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a2cd5a;">
   <div class="container-fluid">
-      <a class="navbar-brand" href="#">Snack'o Maker</a>
+      <a class="navbar-brand" href="/">Snack'o Maker</a> <!-- verknüpfung zur Startseite-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="/">Home</a>
+          <a class="nav-link active" href="/">Home</a> <!-- verknüpfung zur Startseite-->
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="menu">deine Ernährung</a>
+          <a class="nav-link" href="menu">deine Ernährung</a> <!-- verknüpfung zur Bibliothek "deine Ernährung"-->
         </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="statistic" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Statistic
-          </a>
+            Statistic </a> <!-- verknüpfung zur Statistik-->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li>
-              <li><a class="dropdown-item" href="grafik">Grafik</a></li>
+            <li><a class="dropdown-item" href="statistic">Zusammenfassung</a></li> <!-- Dropdowns-->
+              <li><a class="dropdown-item" href="grafik">Grafik</a></li> <!-- Dropdowns-->
           </ul>
         </li>
       </ul>
@@ -82,24 +80,25 @@
 
 
 <!-- Formular -->
+   <!-- required bedeutet, dass eine Eingabe erfolgen muss, man kann kein leeres Formular absenden-->
 
     <form action="/form" method="POST">
         <label for="snack">Menu/Snack:</label>
-        <input type="text" id="snack" name="snack" size="30"/>
+        <input type="text" id="snack" name="snack" size="30" required/>
         <br/><br/>
         <label for="klr">Kalorien:</label>
         <!-- type number verwendet, damit sichergestellt wird, dass keien Buchstaben eingegeben werden -->
-        <input type="number" id="klr" name="klr"/>
+        <input type="number" id="klr" name="klr" required/>
         <br/><br/>
         <label for="preis">Preis CHF:</label>
         <!-- type number verwendet, damit sichergestellt wird, dass keien Buchstaben eingegeben werden -->
-        <input type="number" id="preis" name="preis" step=".01"/>
+        <input type="number" id="preis" name="preis" step=".01" required/>
         <br/><br/>
         <label for="date">Datum:</label>
         <!--type date verwendet damit Datum nicht jedesmal manuel eingetragen werden muss-->
-        <input type="date" id="date" name="date"/>
+        <input type="date" id="date" name="date" required/>
         <br/><br/>
-        <button type="submit" class="btn btn-warning btn-lg">Senden</button>
+        <button type="submit" class="btn btn-warning btn-lg">speichern</button>
     </form>
 
 
