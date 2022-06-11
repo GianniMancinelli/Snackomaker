@@ -35,6 +35,9 @@ def statistic():
     summe = 0
     for el in inhalt:
         summe += int(float(el["Preis CHF"]))
+    # wenn die Ausgaben höher als CHF 500.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man die Ausgaben im Überblick behalten soll.
+    if summe > 500:
+        flash("Bitte behalte deine Ausgaben im Überblick", "warning")
     # damit alle Kalorien summiert werden
     summe1 = 0
     for el in inhalt:
