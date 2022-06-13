@@ -1,50 +1,62 @@
 [
     {
-        "Menu/Snack": "Focaccia mit Poulet Curry",
-        "Kalorien": "350",
-        "Preis CHF": "8.50",
-        "Datum": "20.05.2022"
-    },
-    {
         "Menu/Snack": "Kottu Roti",
         "Kalorien": "331",
         "Preis CHF": "2",
         "Datum": "2022-05-30"
     },
     {
-        "Menu/Snack": "D\u00fcr\u00fcm",
-        "Kalorien": "600",
-        "Preis CHF": "10",
-        "Datum": "31.05.2022"
-    },
-    {
-        "Menu/Snack": "Snickers",
-        "Kalorien": "241",
-        "Preis CHF": "2",
-        "Datum": "01.06.2022"
-    },
-    {
-        "Menu/Snack": "Big Mac",
-        "Kalorien": "510",
-        "Preis CHF": "6.50",
-        "Datum": "03.06.2022"
+        "Menu/Snack": "Entrecote",
+        "Kalorien": "350",
+        "Preis CHF": "25",
+        "Datum": "2022-06-11"
     },
     {
         "Menu/Snack": "Pangasius Filet mit Pommes Frittes",
         "Kalorien": "950",
         "Preis CHF": "12.80",
-        "Datum": "03.06.2022"
+        "Datum": "2022-06-11"
     },
     {
         "Menu/Snack": "Chips di Ceci",
         "Kalorien": "428",
-        "Preis CHF": "2",
-        "Datum": "08.06.2022"
+        "Preis CHF": "2.50",
+        "Datum": "2022-06-11"
     },
     {
         "Menu/Snack": "Apfel",
         "Kalorien": "81",
         "Preis CHF": "0",
-        "Datum": "08.06.2022"
+        "Datum": "2022-06-11"
+    },
+    {
+        "Menu/Snack": "Big Mac",
+        "Kalorien": "510",
+        "Preis CHF": "6.50",
+        "Datum": "2022-06-12"
+    },
+    {
+        "Menu/Snack": "Focaccia mit Poulet Curry",
+        "Kalorien": "350",
+        "Preis CHF": "8.50",
+        "Datum": "2022-06-12"
+    },
+    {
+        "Menu/Snack": "Ben and Jerry's Cookie Dough",
+        "Kalorien": "270",
+        "Preis CHF": "3.20",
+        "Datum": "2022-06-12"
+    },
+    {
+        "Menu/Snack": "Bircherm\u00fcesli",
+        "Kalorien": "250",
+        "Preis CHF": "2.50",
+        "Datum": "2022-06-13"
+    },
+    {
+        "Menu/Snack": "G\u00f6ssi Pistache Glace",
+        "Kalorien": "280",
+        "Preis CHF": "4.10",
+        "Datum": "2022-06-13"
     }
 ]
