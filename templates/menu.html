@@ -63,7 +63,6 @@
 <!-- wiedergibt die json datei in menu.html bzw. key and values -->
 
  {% for el in inhalt %}
- <!--<li> </br></li>-->
   {% for key, value in el.items(): %}
       <li class="list-group-item">{{ key }} : {{ value }}</li> <!-- in liste ausgegeben -->
      {% endfor %}
