@@ -58,5 +58,23 @@
         "Kalorien": "280",
         "Preis CHF": "4.10",
         "Datum": "2022-06-13"
+    },
+    {
+        "Menu/Snack": "Penne alla Mamma Rosa",
+        "Kalorien": "500",
+        "Preis CHF": "0",
+        "Datum": "2022-06-14"
+    },
+    {
+        "Menu/Snack": "Big Tasty Menu",
+        "Kalorien": "1350",
+        "Preis CHF": "15.50",
+        "Datum": "2022-05-14"
+    },
+    {
+        "Menu/Snack": "McDonalds Milk Shake Banana",
+        "Kalorien": "490",
+        "Preis CHF": "4.50",
+        "Datum": "2022-06-14"
     }
 ]
