@@ -97,6 +97,7 @@ Ebenfalls besteht die Möglichkeit unter Statistik - Grafik, die Funnelgrafik, d
 
 # Ungelöste/unbearbeitete Probleme
 **Was wurde nicht gelöst**
+
 Ich wollte eine Suchfunktion unter "deine Ernährung" einbauen. Das Inputfeld funktionierte Einwandfrei, entgegengenommen wurde die Eingabe auch. Doch den Eintrag
 hatte es nie gefunden. Nach langem rumpröblen und verzweifeln, entschliess ich mich dazu, diesen Part mit der Suchfunktion wegzulassen.
 
