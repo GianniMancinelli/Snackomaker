@@ -75,7 +75,7 @@ def eingabe():
 #sobald die Daten eingegeben werden und gespeichert (im json file ernährung_zusammengefasst, erscheint die Flashnachricht, dass die daten gespeichert sind
         with open("ernährung_zusammengefasst.json", "w") as open_file:
             json.dump(datei_inhalt, open_file, indent=4)
-            flash("Besten Dank für deine Eingabe, deine Daten wurden ordnungsgemäss gespeichert.", "success") #flash nachricht
+            flash("Besten Dank für deine Eingabe, deine Daten wurden ordnungsgemäss gespeichert.") #flash nachricht
             return render_template("index.html") #index soll wiedergegeben werden.
     else:
         flash("Etwas ist schiefgelaufen", "danger")
