@@ -76,5 +76,17 @@
         "Kalorien": "490",
         "Preis CHF": "4.50",
         "Datum": "2022-06-14"
+    },
+    {
+        "Menu/Snack": "BBQ Lachs mit gef\u00fcllten Kartoffeln und Kr\u00e4uterbutter",
+        "Kalorien": "1900",
+        "Preis CHF": "17",
+        "Datum": "2022-06-15"
+    },
+    {
+        "Menu/Snack": "Tacos con carne y chili e lime  ",
+        "Kalorien": "1250",
+        "Preis CHF": "0",
+        "Datum": "2022-06-15"
     }
 ]
