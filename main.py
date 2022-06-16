@@ -39,9 +39,12 @@ def statistic():
     summe = 0
     for el in inhalt:
         summe += int(float(el["Preis CHF"]))
-    # wenn die Ausgaben höher als CHF 500.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man die Ausgaben im Überblick behalten soll.
+        # wenn die Ausgaben höher als CHF 500.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man die Ausgaben im Überblick behalten soll.
     if summe > 500:
-        flash("Bitte behalte deine Ausgaben im Überblick", "warning")
+        flash("Bitte behalte deine Ausgaben im Überblick!", "warning")
+        # wenn die Ausgaben höher als CHF 1000.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man bezüglich Ausgaben bremsen soll.
+    if summe > 1000:
+        flash("Du hast viel zu viele Ausgaben für Essen bzw. Snacks!!", "danger")
     # damit alle Kalorien summiert werden, summe muss zuerst definiert werden.
     summe1 = 0
     for el in inhalt:
@@ -60,6 +63,7 @@ def eingabe():
         kosten = data["preis"]
         datum = data["date"]
 #json file wird erstellt
+# falls das nicht klappt, wird eine leere Liste eröffnet
         try:
             with open("ernährung_zusammengefasst.json", "r") as open_file:
                 datei_inhalt = json.load(open_file)
