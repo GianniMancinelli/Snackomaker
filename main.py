@@ -32,23 +32,36 @@ def index():
 def statistic():
     with open("ernährung_zusammengefasst.json", encoding="utf-8") as open_file:
         inhalt = json.load(open_file)
-        #damit menues gezählt werden vom Inhalt bzw. jsonfile
+        #damit menues bzw. eingabe gezählt werden vom Inhalt bzw. jsonfile
         count = len(inhalt)
     about_link = url_for("statistic")
+
     # damit alle Preise CHF summiert werden, summe muss zuerst definiert werden
     summe = 0
     for el in inhalt:
         summe += int(float(el["Preis CHF"]))
-        # wenn die Ausgaben höher als CHF 500.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man die Ausgaben im Überblick behalten soll.
-    if summe > 500:
-        flash("Bitte behalte deine Ausgaben im Überblick!")
-        # wenn die Ausgaben höher als CHF 1000.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man bezüglich Ausgaben bremsen soll.
-    if summe > 1000:
-        flash("Du hast viel zu viele Ausgaben für Essen bzw. Snacks!!")
+        # wenn die Ausgaben höher als CHF 550.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man die Ausgaben im Überblick behalten soll.
+    if summe > 550:
+        flash("Bitte behalte deine Ausgaben im Überblick!") #flashnachricht
+        # wenn die Ausgaben höher als CHF 1500.00 sind, macht das System mittels flashmessage auf statistik.html darauf aufmerksam, dass man bezüglich Ausgaben bremsen soll.
+    if summe > 1500:
+        flash("Du hast viel zu viele Ausgaben für Essen bzw. Snacks!!") #flashnachricht
+    #wenn ein Snack oder Menu mehr als 65 gekostet hat, soll die Meldung, dass man auf die Preise achten soll - da das letzte Menu teuer wahr, auf der Statistik seite erscheinen.
+    # ausgabenperd musste definiert werden (logishcerweise)
+    ausgabenperd = int(float(el["Preis CHF"]))
+    if ausgabenperd > 50:
+        flash("Teure Snacks und Menus sind fein - aber Achte dich auf die Preise, deine letzte Mahlzeit / Snack hat dich über CHF 65 gekostet!")
+
     # damit alle Kalorien summiert werden, summe muss zuerst definiert werden.
     summe1 = 0
     for el in inhalt:
         summe1 += int(float(el["Kalorien"]))
+    # wenn ein erfasstes Gericht oder Snack mehr Kalorien als 1800 enthält, soll in Statistik darauf aufmerkasm gemacht werden, dass die letzte Mahlzeit fast die Tagesration abdeckt.
+   #kalo musste logischerweise zuerst definiert werden.
+    kalo = int(float(el["Kalorien"]))
+    if kalo > 1800:
+        flash("Achtung! Dein letzt erfasster Snack/Menu hat eine enorm hohe Anzahl an Kalorien - Diese deckt fast deine Tagesration ab!!") #flashnachricht
+
     return render_template("statistik.html", link=about_link, count=count,ausgaben=summe, kalorien=summe1 )
 
 

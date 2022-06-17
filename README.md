@@ -25,7 +25,8 @@ Nimmt man nämlich zuviele Kalorien zu sich, ohne dass der Körper die grosse An
 
 Snack'o Maker soll am Schluss aufzeigen, wie viele Menus oder Snacks man zu sich genommen hat, wie viele Kalorien dies sind und effektiv zu sich genommen wurden und dies in Kombination mit den tatsächlichen Ausgaben die man hatte.
 Anhand dieser Informationen, kann man als grober Richtwert entnehmen, ob man sich gesund ernährt (Anhand der Kalorien, die man zu sich genommen hat) und wo man vielleicht noch Sparpotenzial hat (Anhand der totalausgaben). Ab Ausgaben von 
-CHF 500.00 soll das System einen darauf aufmerksam machen, dass man die Ausgaben im Überblick behalten soll.
+CHF 550.00 soll das System einen darauf aufmerksam machen, dass man die Ausgaben im Überblick behalten soll. Ab Ausgaben von CHF 1600.00 macht das System mittels Flash nachricht nochmals darauf Aufmerksam, dass man viel zu viele Ausgaben für Essen hat.
+Das selbe gilt mit den Kalorien, wird etwas zu sich genommen, was mehr als 1800 Kalorien besitzt, soll das System mittels Flash darauf aufmerksam machen.
 
 **Welches Problem löst das Projekt**
 - Anhand der eingenommenen Kalorien soll Rückschlüsse gezogen werden, ob man sich in etwa Gesund ernährt oder nicht. Eine eigen erstellte Tabelle soll als Richtwert dazu dienen.
@@ -87,7 +88,9 @@ Ebenfalls besteht die Möglichkeit unter Statistik - Grafik, die Funnelgrafik, d
 4. Nach belieben können immer weitere Menu/Snacks erfasst werden.
 5. Die erfassten Daten sind gleichzeitig in der Bibliothek "deine Ernährung" ersichtlich, falls man etwas nachschauen möchte.
 
-
+(Kosten die Snacks/Menus mehr als CHF 500.00 erscheint auf der Statistik - zusammenfassung Page, die Flashmessage, dass man auf seine Ausgaben achten soll. Ab Ausgaben von CHF 
+1600.00 erscheint eine neue Flashmessage, die ganz klar mitteilt, dass man zu hohe Ausgaben hat. Das selbe gilt, wenn man ein Gericht erfasst, welches teurer als CHF 65.00 ist - das System macht mittels Flash darauf aufmerksam.
+Sobald man ein Gericht erfasst, dass mehr als 1800 Kalorien hat, erinnert einen das System daran, dass das letzt erfasste Menu/Snack, fast die Tagesration abdeckt.)
 
 
 # Architektur/Flowdiagram
